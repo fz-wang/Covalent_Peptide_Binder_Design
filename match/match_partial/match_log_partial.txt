@@ -1,0 +1,658 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: rosetta.binary.linux.release-258 r258 2020.25+release.d2d9f90 d2d9f90b8cbcacfd7a1f69aefa5de610b100e8a9 https://www.rosettacommons.org 2020-06-21T07:15:29.829863
+core.init: command: match.static.linuxgccrelease -s modi_4i7b.pdb @flags -overwrite
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=-1568909457 seed_offset=0 real_seed=-1568909457
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=-1568909457 RG_type=mt19937
+core.init: found database environment variable ROSETTA3_DB: /home/taki/rosetta_bin_linux_2020.25.61318_bundle/main/database
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 986 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 1.31 seconds.
+core.import_pose.import_pose: File 'modi_4i7b.pdb' automatically determined to be of type PDB
+core.conformation.Conformation: [ WARNING ] missing heavyatom:  OXT on residue VAL:CtermProteinFull 197
+apps.public.match.match: Selecting orientation atoms:  C2   C1   C3 
+protocols.match.MatcherTask: [ WARNING ] no grid file specified for option -grid_boundary. The bounding grid will be generated from the dimensions of the pose. This is experimental at the moment.
+protocols.match.MatcherTask: Bounding box lower corner set to (2.2643,-57.7349,0.0914553), upper corner set to to (44.8221,-0.689,40.0603).
+protocols.toolbox.match_enzdes_util.EnzConstraintIO: read enzyme constraints from XLK_match.cst ... done, 2 cst blocks were read.
+protocols.toolbox.match_enzdes_util.AllowedSeqposForGeomCst: Reading match::scaffold_active_site_residues_for_geomcsts XLK.pos
+protocols.toolbox.match_enzdes_util.AllowedSeqposForGeomCst: 
+protocols.toolbox.match_enzdes_util.AllowedSeqposForGeomCst: 1 : 187 188 189 190 191 192 193 194 195 196 197
+protocols.toolbox.match_enzdes_util.AllowedSeqposForGeomCst: 2 : 58 59 60 61 62 63 64 65 66 67 68 69
+protocols.BumpGrid: Atom type CNH2 with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type COO with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type CH0 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type CH1 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type CH2 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type CH3 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type aroC with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Ntrp with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Nhis with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type NtrR with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type NH2O with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Nlys with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Narg with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Npro with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type OH with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type OW with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type ONH2 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type OOC with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oaro with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oet2 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oet3 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type S with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type SH1 with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Nbb with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type CAbb with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type CObb with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type OCbb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Phos with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Pbb with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Hpol with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type HS with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Hapo with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Haro with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type HNbb with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Hwat with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Owat with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Opoint with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type HOH with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Bsp2 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type F with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cl with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Br with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type I with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Zn2p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Co2p with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Cu2p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Fe2p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Fe3p with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type Mg2p with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Ca2p with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Pha with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type OPha with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type OHha with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Hha with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type CO3 with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type OC3 with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Si with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type OSi with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Oice with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Hice with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Na1p with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type K1p with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type He with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Li with ProbeRadius 1 = 1
+protocols.BumpGrid: Atom type Be with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ne with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Al with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ar with ProbeRadius 5 = 1.65
+protocols.BumpGrid: Atom type Sc with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Ti with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type V with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Cr with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Mn with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ni with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ga with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ge with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type As with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Se with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Kr with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Rb with ProbeRadius 6 = 1.75
+protocols.BumpGrid: Atom type Sr with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Y with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Zr with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Nb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Mo with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Tc with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ru with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Rh with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Pd with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ag with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cd with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type In with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Sn with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Sb with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Te with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Xe with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Cs with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ba with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type La with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Ce with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Pr with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Nd with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Pm with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Sm with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Eu with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Gd with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Tb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Dy with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Ho with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Er with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Tm with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Yb with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Lu with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Hf with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ta with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type W with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Re with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Os with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Ir with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Pt with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Au with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Hg with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type Tl with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Pb with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Bi with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Po with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type At with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Rn with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Fr with ProbeRadius 7 = 1.85
+protocols.BumpGrid: Atom type Ra with ProbeRadius 4 = 1.55
+protocols.BumpGrid: Atom type Ac with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Th with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Pa with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type U with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Np with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Pu with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Am with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cm with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Bk with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Cf with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Es with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Fm with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Md with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type No with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type Lr with ProbeRadius 3 = 1.4
+protocols.BumpGrid: Atom type SUCK with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type REPL with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type REPLS with ProbeRadius 2 = 1.17
+protocols.BumpGrid: Atom type HREPS with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type VIRT with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPct with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPnm with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPdp with ProbeRadius 0 = 0
+protocols.BumpGrid: Atom type MPtk with ProbeRadius 0 = 0
+protocols.match.Matcher: Set occupied space bounding box: Lower (2.2643, -57.7349, 0.0914553) Upper (44.8221, -0.689, 40.0603)
+protocols.match.Matcher: Matcher::initialize_from_file: n geometric constraints: 2
+protocols.match.Matcher: Begin constraint1
+protocols.match.Matcher:  Upstream residue type ALX for geometric constraint #1
+protocols.match.Matcher: [ WARNING ] Ignoring rotamer sampling strategy data for chi # 1 for residue type ALX because it only has 0 chi angles.
+protocols.match.Matcher:    ALX XLK
+protocols.match.Matcher:     U3:  N   U2:  CA  U1:  CB  D1:  N1  D2:  C1  D3:  C2 
+protocols.match.Matcher:      Adding Classical Match Algorithm with geometry samples: 
+protocols.match.Matcher:      tor_U3D1: 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270 280 290 300 310 320 330 340 350
+protocols.match.Matcher:      ang_U2D1: 100 110 120
+protocols.match.Matcher:      dis_U1D1: 1.45
+protocols.match.Matcher:      tor_U2D2: 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270 280 290 300 310 320 330 340 350
+protocols.match.Matcher:      ang_U1D2: 110 120 130
+protocols.match.Matcher:      tor_U1D3: 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270 280 290 300 310 320 330 340 350
+protocols.match.downstream.LigandConformerBuilder: Initializing from residue XLK
+core.pack.rotamers.SingleLigandRotamerLibrary: Read in 1 rotamers from XLK_0001.pdb !
+protocols.match.downstream.LigandConformerBuilder: Found 1 rotamers for XLK
+protocols.match.downstream.LigandConformerBuilder: Idealizing ligand rotamers
+protocols.match.downstream.LigandConformerBuilder: Ligand conformers were split up into 1 match-redundant groups.
+protocols.match.Matcher: Begin constraint2
+protocols.match.Matcher:  Upstream residue type CYX for geometric constraint #2
+protocols.match.Matcher:   ALGORITHM_INFO:: match -- chi sampling strategy EX_TWO_HALF_STEP_STDDEVS for chi # 1
+protocols.match.Matcher:    CYX XLK
+protocols.match.Matcher:     U3:  CA  U2:  CB  U1:  SG  D1:  C3  D2:  C2  D3:  C1 
+protocols.match.Matcher:      Adding Classical Match Algorithm with geometry samples: 
+protocols.match.Matcher:      tor_U3D1: 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270 280 290 300 310 320 330 340 350
+protocols.match.Matcher:      ang_U2D1: 88 98 108
+protocols.match.Matcher:      dis_U1D1: 1.8
+protocols.match.Matcher:      tor_U2D2: 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270 280 290 300 310 320 330 340 350
+protocols.match.Matcher:      ang_U1D2: 99 109 119
+protocols.match.Matcher:      tor_U1D3: 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270 280 290 300 310 320 330 340 350
+protocols.match.downstream.LigandConformerBuilder: Initializing from residue XLK
+protocols.match.downstream.LigandConformerBuilder: Found 1 rotamers for XLK
+protocols.match.downstream.LigandConformerBuilder: Idealizing ligand rotamers
+protocols.match.downstream.LigandConformerBuilder: Ligand conformers were split up into 1 match-redundant groups.
+protocols.match.output.ProcessorFactory: Matches will be consolidated before output.
+Created UpstreamCollisionFilter
+Created UpstreamDownstreamCollisionFilter
+protocols.match.Matcher: Initializing BumpGrids... 
+protocols.match.Matcher: ...done
+protocols.match.Matcher:  TIMING: Bump grids took 2.72 seconds to compute
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /home/taki/rosetta_bin_linux_2020.25.61318_bundle/main/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/home/taki/rosetta_bin_linux_2020.25.61318_bundle/main/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.21 seconds to load from binary
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 187 and found 73064 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 188 and found 107309 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 189 and found 126471 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 190 and found 169437 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 191 and found 102348 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 192 and found 209480 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 193 and found 30707 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 194 and found 98357 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 195 and found 74263 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 196 and found 176255 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 419904 downstream conformations at residue 197 and found 28468 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Finished round 1 with 1196159 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 6298560 downstream conformations at residue 58 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 6298560 downstream conformations at residue 59 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 6298560 downstream conformations at residue 60 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 6298560 downstream conformations at residue 61 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 4199040 downstream conformations at residue 62 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 6298560 downstream conformations at residue 63 and found 25 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 6298560 downstream conformations at residue 64 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 4199040 downstream conformations at residue 65 and found 63 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 4199040 downstream conformations at residue 66 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 4199040 downstream conformations at residue 67 and found 102 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 4199040 downstream conformations at residue 68 and found 0 hits.
+protocols.match.upstream.ProteinUpstreamBuilder: Considered 2099520 downstream conformations at residue 69 and found 37 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Finished round 2 with 227 hits.
+protocols.match.downstream.ClassicMatchAlgorithm: Erased 1195953 round 1 hits with 206 hits remaining.
+protocols.match.Matcher: Found 204 connected components in the hit neighbor graph in 0.01 seconds.
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 2 2; log(combos) 1.38629
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 3; log(combos) 1.09861
+protocols.match.Matcher: Processed 3 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 2; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 0 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 2 1; log(combos) 0.693147
+protocols.match.Matcher: Processed 2 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: predict_n_matches_for_hit_subsets with #hits for each geomcst: 1 1; log(combos) 0
+protocols.match.Matcher: Processed 1 matches
+protocols.match.Matcher: Match enumeration statistics:  num_potential_matches: 1178;    all_lex_states 1178;   num_considered_muliple_origins 0;    num_non_up_only_incompatible 33;    num_ds_hit_incompatible 0;    num_up_only_incompatible 0;    num_sent_to_proc 239
+protocols.match.Matcher: 0 empty uplists were observed.
+protocols.match.output.MatchProcessor: A total of 239 matches were processed.
+protocols.match.output.MatchProcessor: No matches failed any filter.
+apps.public.match.match: Matcher ran for 62 seconds, where finding hits took 60 seconds and processing the matches took 2 seconds.
