@@ -23,15 +23,16 @@ NCAA_lis = ['23P','CYX']  #待查找的NCAA的三字符
 
 for file in merge_in_list:
     #读入模板文件
+    pdb_name = file.replace('\n','')
     template = open('fastrelax_template.xml','r+')
 
     match_result_filename = file.split('_')
-    merge_in = open(file.replace('\n',''), 'r+')
+    merge_in = open(pdb_name, 'r+')
 
     #为每个Match结果的每个构象建立文件夹，方便后续优化及分析
     new_dir = f'Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}'
     os.mkdir(new_dir)
-    shutil.copy(file.replace('\n',''),new_dir)
+    shutil.copy(pdb_name,new_dir)
     os.chdir(new_dir) #进入各个子文件夹
 
     residue_info = []
@@ -52,13 +53,17 @@ for file in merge_in_list:
     
     print(res_CYX_pos,res_23P_pos)
     
-    sh_merge_out = open(f'fastrelax_Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}.xml','w+')
+    merge_outXML = open(f'fastrelax_Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}.xml','w+')
 
     #将fastrelax_template.xml格式化，因为不同的match结果匹配不同的位点，bond Mover的参数需要修改以适配
     for line in template:
         if '{}' in line:
-            sh_merge_out.write(line.format(res_CYX_pos,res_23P_pos))
+            merge_outXML.write(line.format(res_CYX_pos,res_23P_pos))
         else:
-            sh_merge_out.write(line)
+            merge_outXML.write(line)
+
+    #接下来生成relax需要的shell命令
+    merge_outSh = open(f'sh_Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}.sh','w+')
+    merge_outSh.write(f'cd {new_dir};/lustre1/chuwang_pkuhpc/rosetta/rosetta_src_2019.47.61047_bundle/main/source/bin/rosetta_scripts.mpi.linuxiccrelease -s {pdb_name} -extra_res_fa CYX.params 23P.params -parser:protocol fastrelax_Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}.xml -nstruct 50;cd ..')
 
     os.chdir('../')
