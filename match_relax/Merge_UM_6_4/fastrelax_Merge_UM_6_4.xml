@@ -1,0 +1,30 @@
+<ROSETTASCRIPTS>
+	<SCOREFXNS>
+		<ScoreFunction name="ref" weights="ref2015_cart" />
+	</SCOREFXNS>
+	<RESIDUE_SELECTORS>
+	</RESIDUE_SELECTORS>
+	<PACKER_PALETTES>
+	</PACKER_PALETTES>
+	<TASKOPERATIONS>
+	</TASKOPERATIONS>
+	<MOVE_MAP_FACTORIES>
+	</MOVE_MAP_FACTORIES>
+	<SIMPLE_METRICS>
+	</SIMPLE_METRICS>
+	<FILTERS>
+	</FILTERS>
+	<MOVERS>
+		<DeclareBond name="bond" res1="63" atom1="SG" res2="193" atom2="CZ"/>
+
+		<FastRelax name="fr" scorefxn="ref" disable_design="true" bondlength="true">
+			<MoveMap name="mm" bb="1" chi="1" jump="1" />
+		</FastRelax>
+
+	</MOVERS>
+	<PROTOCOLS>
+		<Add mover="bond" />
+		<Add mover="fr" />
+	</PROTOCOLS>
+	<OUTPUT />
+</ROSETTASCRIPTS>

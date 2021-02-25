@@ -62,8 +62,8 @@ for file in merge_in_list:
         else:
             merge_outXML.write(line)
 
+    os.chdir('../')
+
     #接下来生成relax需要的shell命令
     merge_outSh = open(f'sh_Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}.sh','w+')
-    merge_outSh.write(f'cd {new_dir};/lustre1/chuwang_pkuhpc/rosetta/rosetta_src_2019.47.61047_bundle/main/source/bin/rosetta_scripts.mpi.linuxiccrelease -s {pdb_name} -extra_res_fa CYX.params 23P.params -parser:protocol fastrelax_Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}.xml -nstruct 50;cd ..')
-
-    os.chdir('../')
+    merge_outSh.write(f'cd {new_dir};/lustre1/chuwang_pkuhpc/rosetta/rosetta_src_2019.47.61047_bundle/main/source/bin/rosetta_scripts.mpi.linuxiccrelease -s {pdb_name} -extra_res_fa ../CYX.params ../23P.params -parser:protocol fastrelax_Merge_UM_{match_result_filename[2]}_{match_result_filename[4]}.xml -nstruct 50;cd ..')
